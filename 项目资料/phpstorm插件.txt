@@ -1,0 +1,7 @@
+CodeGlance  代码地图插件
+
+Emmet
+
+
+PHP composer.json support
+composer.json  自动补全
