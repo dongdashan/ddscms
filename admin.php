@@ -19,4 +19,4 @@ include 'weize/framework.php';
 // if( $isajax == 0 ) {
 	// echo "<!-- {$w_run_diff} -->";
 // }
-?> we
+?>

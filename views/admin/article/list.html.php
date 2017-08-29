@@ -44,27 +44,22 @@ if( !defined('IN_WEIZEPHP') ) {
                 </div>
             </div>
         <div class="row w-row">
+            <div class="col-lg-12">
+                <div class="layui-btn-group">
 
-            <div class="layui-btn-group">
-                <a class="layui-btn layui-btn-small">
-                    <i class="layui-icon">&#xe627;</i>全选
-                </a>
-                <button class="layui-btn layui-btn-small">
-                    <i class="layui-icon">&#xe654;</i>排序
-                </button>
-                <button class="layui-btn layui-btn-small">
-                    <i class="layui-icon">&#xe642;</i>编辑
-                </button>
-                <button class="layui-btn layui-btn-small  layui-btn-danger">
-                    <i class="layui-icon">&#xe640;</i>删除
-                </button>
+                    <button class="layui-btn   layui-btn-small">排序</button>
+                    <button class="layui-btn    layui-btn-small">删除</button>
+                </div>
 
+                <button class="layui-btn layui-btn-danger layui-btn-small">添加内容</button>
             </div>
         </div>
             <div class="table-responsive">
                 <table class="table w-table">
                     <thead class="w-thead-1">
                         <tr>
+                            <th><input name="" type="checkbox" value="" class="select_all"></th>
+                            <th>ID</th>
                             <th>ID</th>
                             <th>标题</th>
                             <th>显示</th>
@@ -76,6 +71,7 @@ if( !defined('IN_WEIZEPHP') ) {
                         foreach($articles as $v) {
                             $status_str = $v['status'] == 1 ? '是' : '<span class="text-danger">否</span>';
                             echo '<tr>' .
+                                '<td><input name="check_id[]" type="checkbox" value="'. $v['aid'] .'"></td>' .
                                 '<td>'. $v['aid'] .'</td>' .
                                 '<td>'. htmlspecialchars($v['title']) .'</td>' .
                                 '<td>'. $status_str .'</td>' .
@@ -90,7 +86,8 @@ if( !defined('IN_WEIZEPHP') ) {
                     </tbody>
                 </table>
             </div>
-            <nav><?php echo $pagination_output;?></nav>
+
+        <nav><?php echo $pagination_output;?></nav>
         <?php include $wconfig['theme_path'] . '/admin/footer.html.php';?>
         <?php include $wconfig['theme_path'] . '/w_dialog_success.html.php';?>
         <?php include $wconfig['theme_path'] . '/w_dialog_error.html.php';?>

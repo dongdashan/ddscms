@@ -12,8 +12,6 @@ if( $modelid < 1 ) {
     w_error('错误，非法索引ID');
 }
 
-// 包含扩展函数
-include W_ROOT_PATH . '/lib/w_extend.func.php';
 
 $models = $wdb->get("{$wconfig['db']['tablepre']}model","*",array("modelid"=>$modelid));
 $models["setting"]=string2array($models["setting"]);

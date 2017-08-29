@@ -6,7 +6,7 @@ if( !defined('IN_WEIZEPHP') ) {
         </div>
             </div>
         </div>
-        
+<script src="<?php echo $wconfig['theme_admin'];?>/js/comm.js"></script>
         <script>
         $(document).ready(function() {
             // 弹出菜单

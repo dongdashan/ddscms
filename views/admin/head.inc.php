@@ -9,7 +9,7 @@ function admin_head($title) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
         <title>{$title}</title>
         <link rel="stylesheet" href="{$wconfig['public_path']}/bootstrap-3.3.7/css/bootstrap.min.css"/>
-<link rel="stylesheet" href="{$wconfig['public_path']}/layui/css/layui.css" />
+         <link rel="stylesheet" href="{$wconfig['public_path']}/layui/css/layui.css" />
         <link rel="stylesheet" href="{$wconfig['theme_admin']}/css/global.css"/>
         <link rel="stylesheet" href="{$wconfig['theme_admin']}/css/admin.css"/>
         <link rel="stylesheet" type="text/css" href="{$wconfig['public_path']}/webuploader/webuploader.css"/>
@@ -23,6 +23,7 @@ function admin_head($title) {
         <script src="{$wconfig['public_path']}/js/jquery-1.12.4.min.js"></script>
         <script src="{$wconfig['public_path']}//bootstrap-3.3.7/js/bootstrap.min.js"></script>
         <script src="{$wconfig['theme_admin']}/js/jQuery.Huifold.js"></script>
+
     <link rel="stylesheet" href="{$wconfig['public_path']}/kindeditor4.1.100/themes/default/default.css" />
     <link rel="stylesheet" href="{$wconfig['public_path']}/kindeditor4.1.100/plugins/code/prettify.css" />
     <script charset="utf-8" src="{$wconfig['public_path']}/kindeditor4.1.100/kindeditor-all-min.js"></script>

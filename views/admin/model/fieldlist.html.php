@@ -10,7 +10,12 @@ if( !defined('IN_WEIZEPHP') ) {
     <body>
         <?php include $wconfig['theme_path'] . '/admin/header.html.php';?>
             <h4 class="w-h4">字段管理</h4>
-        <br/>
+        <div class="row w-row">
+            <div class="col-lg-12">
+
+                <a class="btn btn-warning btn-sm" href="?m=model&a=fieldadd&modelid=<?php echo $modelid?>">添加字段</a>
+            </div>
+        </div>
 
             <div class="table-responsive">
                 <table class="table w-table">

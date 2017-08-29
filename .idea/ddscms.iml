@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$/../XiaoCms_20141229">
+      <excludeFolder url="file://$MODULE_DIR$/../XiaoCms_20141229" />
+    </content>
     <content url="file://$MODULE_DIR$" />
+    <content url="file://F:/FTP/shengmei20160212">
+      <excludeFolder url="file://F:/FTP/shengmei20160212" />
+    </content>
+    <content url="file://F:/website_php/php_test_cms">
+      <excludeFolder url="file://F:/website_php/php_test_cms" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
